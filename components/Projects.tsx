@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
+import Image from 'next/image';
+
 const projects = [
   {
     title: 'Native Weather App',
@@ -9,7 +11,7 @@ const projects = [
     image: '/images/WeatherAppNative.png',
     link: 'https://github.com/SamueEel90/Expo-Weather-App',
   },
-    {
+  {
     title: 'Crypto Tracker',
     description:
       'Webové API na sledovanie kryptomien a správu investičného portfólia.Umožňuje monitorovanie cien, výkonnosti a pokročilých metrík kryptomien v reálnom čase pomocou GeckoAPI. Integrácia s Binance API umožňuje zobrazenie hodnoty peňaženky používateľa a vykonávanie automatizovaných obchodov na platforme Binance.',
@@ -17,8 +19,8 @@ const projects = [
     image: '/images/crypto2.png',
     link: 'https://github.com/SamueEel90/Crypto-Tracker',
   },
-
 ];
+
 const Projects = () => {
   return (
     <section id="projects" className="my-16 mt-26 max-w-xl">
@@ -31,10 +33,14 @@ const Projects = () => {
             className="flex flex-col md:flex-row gap-6 rounded-xl p-6 hover:bg-theme-background/60 hover:scale-105 hover:shadow-lg transform transition duration-300"
           >
             <div className="md:w-1/2 w-full">
-              <img
+              <Image
                 src={image}
                 alt={title}
-                className="rounded-xl h-40 object-cover"
+                className="rounded-xl object-cover"
+                width={400}
+                height={160}
+                style={{ height: '160px', width: '100%', objectFit: 'cover' }}
+                priority
               />
             </div>
 

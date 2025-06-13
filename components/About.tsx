@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const About = () => {
   return (
     <div className="text-secondary text-l mt-25 max-w-xl ml-4 mr-4 md:mr-20 leading-relaxed">
@@ -26,19 +28,25 @@ const About = () => {
       <strong className="hover:text-theme-blue text-primary cursor-pointer transition-colors duration-200">Attend Flow</strong>
      <div className="flex gap-2 mt-10">
   <div className="group relative w-1/2 rounded-xl overflow-hidden">
-    <img
-      src="images/Profilovka.jpg"
+    <Image
+      src="/images/Profilovka.jpg"
       alt="Profilovka 1"
+      fill
       className="w-full h-full object-cover transition duration-500 group-hover:scale-125"
+      sizes="(max-width: 768px) 100vw, 50vw"
+      style={{ objectFit: 'cover' }}
     />
     <div className="absolute inset-0 bg-theme-blue/30 backdrop-brightness-90 transition duration-500 group-hover:bg-transparent" />
   </div>
 
   <div className="group relative w-1/2 rounded-xl overflow-hidden">
-    <img
-      src="images/profilovka2.jpg"
+    <Image
+      src="/images/profilovka2.jpg"
       alt="Profilovka 2"
+      fill
       className="w-full h-full object-cover transition duration-500 group-hover:scale-150"
+      sizes="(max-width: 768px) 100vw, 50vw"
+      style={{ objectFit: 'cover' }}
     />
     <div className="absolute inset-0 bg-theme-blue/30 backdrop-brightness-90 transition duration-500 group-hover:bg-transparent" />
   </div>

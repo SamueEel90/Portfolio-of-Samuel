@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import MouseLight from "@/components/MouseLight";
 import "./globals.css";
-import { Funnel_Sans, PT_Sans, Sofia_Sans, Syncopate} from 'next/font/google'
+import { Funnel_Sans} from 'next/font/google'
  
 const nunito = Funnel_Sans ({
   weight: "400",
