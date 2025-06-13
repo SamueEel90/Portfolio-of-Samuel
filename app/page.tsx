@@ -7,16 +7,19 @@ import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-<div className="flex flex-col md:flex-row">
-  {/* Left side (desktop) or top (mobile) */}
-  <div className="w-full md:w-1/2 flex flex-col md:h-screen pl-4">
-    {/* Shared left margin wrapper for consistency */}
-    <div className="mx-auto ">
-      <Hero />
-      <IconBar />
-      <NavBar />
-    </div>
-</div>
+    <div className="flex flex-col md:flex-row">
+      {/* Left side (desktop) or top (mobile) */}
+      <div className="w-full md:w-1/2 flex flex-col md:h-screen pl-4">
+        {/* Shared left margin wrapper for consistency */}
+        <div className="mx-auto">
+          <Hero />
+          <IconBar />
+          <div className="text-primary text-l mt-4 hover:text-white transition duration-300">
+            stofiksamuel@gmail.com
+          </div>
+          <NavBar />
+        </div>
+      </div>
 
       {/* Right side: scrollable on desktop, part of flow on mobile */}
       <div className="flex flex-col w-full md:w-1/2 overflow-y-auto md:h-screen">
@@ -25,12 +28,23 @@ export default function Home() {
         </section>
         <section id="experience">
           <Experience />
+          <div className="text-primary text-xl font-bold max-w-xl pl-5">
+            <a
+              className="transform transition duration-200 hover:scale-105 hover:text-theme-blue inline-block"
+              href="/Zivotopis%20Stofik.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Celý životopis ↗
+            </a>
+          </div>
         </section>
         <section id="projects">
           <Projects />
         </section>
-        <div className="text-gray-500 mt-10 ml-4 text-sm">Coded in Visual Studio Code. Built with Next.js and Tailwind CSS.</div>
-        
+        <div className="text-gray-500 mt-10 ml-4 text-sm">
+          Coded in Visual Studio Code. Built with Next.js and Tailwind CSS.
+        </div>
       </div>
     </div>
   );

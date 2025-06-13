@@ -24,6 +24,26 @@ const About = () => {
       <br />
       Momentalne Pracujem na projekte:{' '}
       <strong className="hover:text-theme-blue text-primary cursor-pointer transition-colors duration-200">Attend Flow</strong>
+     <div className="flex gap-2 mt-10">
+  <div className="group relative w-1/2 rounded-xl overflow-hidden">
+    <img
+      src="images/Profilovka.jpg"
+      alt="Profilovka 1"
+      className="w-full h-full object-cover transition duration-500 group-hover:scale-125"
+    />
+    <div className="absolute inset-0 bg-theme-blue/30 backdrop-brightness-90 transition duration-500 group-hover:bg-transparent" />
+  </div>
+
+  <div className="group relative w-1/2 rounded-xl overflow-hidden">
+    <img
+      src="images/profilovka2.jpg"
+      alt="Profilovka 2"
+      className="w-full h-full object-cover transition duration-500 group-hover:scale-150"
+    />
+    <div className="absolute inset-0 bg-theme-blue/30 backdrop-brightness-90 transition duration-500 group-hover:bg-transparent" />
+  </div>
+</div>
+
     </div>
   );
 };

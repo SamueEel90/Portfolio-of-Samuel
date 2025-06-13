@@ -48,7 +48,10 @@ const Projects = () => {
                     className="flex items-center gap-2 text-primary hover:text-white transition duration-300"
                   >
                     <h3 className="text-xl font-semibold">{title}</h3>
-                    <FaGithub className="text-2xl" />
+                    <>
+                      <FaGithub className="text-2xl" />
+                      <span className="text-4xl ml-1">↗</span>
+                    </>
                   </a>
                 </div>
                 <p className="text-secondary text-s mb-4">{description}</p>

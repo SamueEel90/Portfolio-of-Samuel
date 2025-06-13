@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-
+import MouseLight from "@/components/MouseLight";
 import "./globals.css";
 import { Funnel_Sans, PT_Sans, Sofia_Sans, Syncopate} from 'next/font/google'
  
@@ -21,7 +21,8 @@ export default function RootLayout({
   return (
     <html className={nunito.className} lang="en">
       <body>
-        {children}
+        <MouseLight /> 
+        <main>{children}</main>
       </body>
     </html>
   );

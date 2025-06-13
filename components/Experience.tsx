@@ -44,7 +44,7 @@ const Experience = () => {
         {experiences.map(({ date, title, company, bullets }) => (
           <div
             key={title}
-            className="group flex  flex-col md:flex-row md:items-start p-8 rounded-lg hover:bg-theme-background/60 hover:scale-105 hover:shadow-lg transform transition duration-300"
+            className="group flex  flex-col md:flex-row md:items-start p-8 rounded-lg hover:bg-theme-background/60  hover:shadow-lg transform transition duration-300"
             style={{ perspective: '1000px' }} 
           >
             <time className="text-secondary text-md md:w-1/4 mb-2 md:mb-0">{date}</time><br />
