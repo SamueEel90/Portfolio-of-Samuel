@@ -4,14 +4,13 @@ import About from "@/components/About";
 import IconBar from "@/components/IconBar";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="flex flex-col md:flex-row">
       {/* Left side (desktop) or top (mobile) */}
       <div className="w-full md:w-1/2 flex flex-col md:h-screen pl-4">
-        {/* Shared left margin wrapper for consistency */}
         <div className="mx-auto">
           <Hero />
           <IconBar />
@@ -40,13 +39,19 @@ export default function Home() {
             </a>
           </div>
         </section>
-        <section id="projects">
+        <section id="projects" className="min-h-5">
           <Projects />
-        <Link className="text-primary text-xl font-bold pl-5" href="/projects">Vsetky Projekty ↗</Link>
-        </section>
+        
+        <Link
+          className="text-primary text-xl font-bold pl-5"
+          href="/projects"
+        >
+          Vsetky Projekty ↗
+        </Link>
         <div className="text-gray-500 mt-10 ml-4 text-sm">
           Coded in Visual Studio Code. Built with Next.js and Tailwind CSS.
         </div>
+        </section>
       </div>
     </div>
   );

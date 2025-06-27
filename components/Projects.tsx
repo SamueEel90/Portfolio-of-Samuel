@@ -6,10 +6,10 @@ const projects = [
   {
     title: 'Attend Flow',
     description:
-      'Mobilná aplikácia, ktorú som vyvinul na podporu mojej pracovnej pozície. Umožňuje vedúcim smien mať vždy prehľad o príchodoch, prestávkach a odchodoch zamestnancov na danej smene, čím rieši zásadný problém na veľkých pobočkách. Do budúcnosti plánujem pridať možnosť úpravy, pridania a vymazania zmien priamo v hlavnom systéme plánovania zmien, čo je mojím ďalším projektom Shift Planner.',
+      'Mobilná aplikácia, ktorú som vyvinul na podporu mojej pracovnej pozície. Umožňuje vedúcim smien mať vždy prehľad o príchodoch, prestávkach a odchodoch zamestnancov na danej smene, čím rieši zásadný problém na veľkých filiálkach. Do budúcnosti plánujem pridať možnosť úpravy, pridania a vymazania zmien priamo v hlavnom systéme plánovania zmien, čo je mojím ďalším projektom Shift Planner.',
     tech: ['React Native', 'Expo', 'TypeScript', 'TailwindCSS'],
-    image: '/images/WeatherAppNative.png',
-    link: 'https://github.com/SamueEel90/Expo-Weather-App',
+    image: '/images/AttendFlow.png',
+    link: 'https://github.com/SamueEel90/Attend-Flow',
   },
   {
     title: 'Native Weather App',
