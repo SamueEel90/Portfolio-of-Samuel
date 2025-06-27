@@ -4,9 +4,17 @@ import Image from 'next/image';
 
 const projects = [
   {
+    title: 'Attend Flow',
+    description:
+      'Mobilná aplikácia, ktorú som vyvinul na podporu mojej pracovnej pozície. Umožňuje vedúcim smien mať vždy prehľad o príchodoch, prestávkach a odchodoch zamestnancov na danej smene, čím rieši zásadný problém na veľkých pobočkách. Do budúcnosti plánujem pridať možnosť úpravy, pridania a vymazania zmien priamo v hlavnom systéme plánovania zmien, čo je mojím ďalším projektom Shift Planner.',
+    tech: ['React Native', 'Expo', 'TypeScript', 'TailwindCSS'],
+    image: '/images/WeatherAppNative.png',
+    link: 'https://github.com/SamueEel90/Expo-Weather-App',
+  },
+  {
     title: 'Native Weather App',
     description:
-      'Jednoduchá a rýchla mobilná aplikácia, ktorá poskytuje aktuálne počasie. Využíva API OpenWeatherMap na získavanie meteorologických dát a ponúka prehľadné a intuitívne používateľské rozhranie.',
+      'Jednoduchá a rýchla mobilná aplikácia, ktorá poskytuje aktuálne informácie o počasí. Využíva OpenWeatherMap API na získavanie meteorologických údajov a ponúka prehľadné, intuitívne používateľské rozhranie.',
     tech: ['React Native', 'Expo', 'TypeScript', 'TailwindCSS', 'Redux'],
     image: '/images/WeatherAppNative.png',
     link: 'https://github.com/SamueEel90/Expo-Weather-App',
@@ -14,10 +22,18 @@ const projects = [
   {
     title: 'Crypto Tracker',
     description:
-      'Webové API na sledovanie kryptomien a správu investičného portfólia.Umožňuje monitorovanie cien, výkonnosti a pokročilých metrík kryptomien v reálnom čase pomocou GeckoAPI. Integrácia s Binance API umožňuje zobrazenie hodnoty peňaženky používateľa a vykonávanie automatizovaných obchodov na platforme Binance.',
-    tech: ['React Native', 'Expo', 'TypeScript', 'TailwindCSS', 'Redux', 'Node js','JWT'],
+      'Webová aplikácia na sledovanie kryptomien a správu investičných portfólií. Umožňuje sledovať ceny, výkonnosť a pokročilé metriky v reálnom čase pomocou GeckoAPI. Integrácia s Binance API umožňuje zobraziť zostatky v peňaženke a vykonávať automatizované obchody na platforme Binance.',
+    tech: ['React Native', 'Expo', 'TypeScript', 'TailwindCSS', 'Redux', 'Node.js', 'JWT'],
     image: '/images/crypto2.png',
     link: 'https://github.com/SamueEel90/Crypto-Tracker',
+  },
+  {
+    title: 'Moja osobná webstránka',
+    description:
+      'Moja osobná webová stránka vytvorená pomocou Next.js a Tailwind CSS.',
+    tech: ['Next.js', 'React', 'TailwindCSS'],
+    image: '/images/portfolioofsamuel.png',
+    link: 'https://github.com/SamueEel90/Portfolio-of-Samuel',
   },
 ];
 

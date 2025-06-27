@@ -4,6 +4,7 @@ import About from "@/components/About";
 import IconBar from "@/components/IconBar";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
         </section>
         <section id="projects">
           <Projects />
+        <Link className="text-primary text-xl font-bold pl-5" href="/projects">Vsetky Projekty ↗</Link>
         </section>
         <div className="text-gray-500 mt-10 ml-4 text-sm">
           Coded in Visual Studio Code. Built with Next.js and Tailwind CSS.
