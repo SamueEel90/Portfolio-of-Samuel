@@ -9,7 +9,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col md:flex-row">
-      {/* Left side (desktop) or top (mobile) */}
       <div className="w-full md:w-1/2 flex flex-col md:h-screen pl-4">
         <div className="mx-auto">
           <Hero />
@@ -21,7 +20,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Right side: scrollable on desktop, part of flow on mobile */}
+     
       <div className="flex flex-col w-full md:w-1/2 overflow-y-auto md:h-screen">
         <section id="about">
           <About />

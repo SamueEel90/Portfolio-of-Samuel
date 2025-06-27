@@ -13,8 +13,8 @@ const Hero = () => {
         </h2>
 
         <h3 className="text-primary text-l max-w-2xl">
-          I build accessible, pixel-perfect <br className="sm:block" />
-          digital experiences for the web.
+          Vedúci oddelenia Kaufland <br className="sm:block" />
+          Študent aplikovanej informatiky a automatizácie v priemysle STU MTF
         </h3>
 
    
