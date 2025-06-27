@@ -46,7 +46,7 @@ export default function Home() {
           className="text-primary text-xl font-bold pl-5"
           href="/projects"
         >
-          Vsetky Projekty ↗
+          Všetky projekty ↗
         </Link>
         <div className="text-gray-500 mt-10 ml-4 text-sm">
           Coded in Visual Studio Code. Built with Next.js and Tailwind CSS.
