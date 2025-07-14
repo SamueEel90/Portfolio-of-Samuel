@@ -13,7 +13,8 @@ const projects = [
     tech: ['React Native', 'Expo', 'TypeScript', 'TailwindCSS', 'Redux', 'Node.js', 'JWT'],
     images: [
       '/images/Crypto1.png',
-      '/images/Crypto2.png'
+      '/images/Crypto2.png',  
+
     ],
     link: 'https://github.com/SamueEel90/Crypto-Tracker',
   },
@@ -73,7 +74,7 @@ const Projects = () => {
               {images.length > 1 && (
                 <button
                   aria-label="Previous image"
-                  className="absolute left-2 top-1/2 -translate-y-1/2 z-10 p-1 bg-theme-blue/80 hover:bg-theme-blue text-white rounded-full shadow transition disabled:opacity-50"
+                  className="absolute left-2 top-1/2 -translate-y-1/2 z-10 p-1 hover:bg-theme-blue text-white rounded-full shadow transition disabled:opacity-50"
                   onClick={() => handlePrev(idx, images.length)}
                   disabled={images.length <= 1}
                   style={{ outline: 'none', border: 'none' }}
@@ -102,7 +103,7 @@ const Projects = () => {
               {images.length > 1 && (
                 <button
                   aria-label="Next image"
-                  className="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-1 bg-theme-blue/80 hover:bg-theme-blue text-white rounded-full shadow transition disabled:opacity-50"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-1 hover:bg-theme-blue text-white rounded-full shadow transition disabled:opacity-50"
                   onClick={() => handleNext(idx, images.length)}
                   disabled={images.length <= 1}
                   style={{ outline: 'none', border: 'none' }}
