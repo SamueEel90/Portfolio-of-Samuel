@@ -23,6 +23,11 @@ const projects = [
     image: '/images/portfolioofsamuel.png',
     link: 'https://github.com/SamueEel90/Portfolio-of-Samuel',
   },
+  { 
+    title: 'Weather App',
+    image: '/images/WeatherApp.png',
+    link: 'https://github.com/SamueEel90/Weather-App',
+  }
 ];
 
 const Page = () => {

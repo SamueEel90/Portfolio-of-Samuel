@@ -5,6 +5,7 @@ import IconBar from "@/components/IconBar";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Link from "next/link";
+import PhoneProjects from "@/components/PhoneProjects";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
           </div>
         </section>
         <section id="projects" className="min-h-5">
+          <PhoneProjects />
           <Projects />
         
         <Link
