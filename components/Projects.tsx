@@ -13,7 +13,8 @@ const projects = [
     tech: ['React Native', 'Expo', 'TypeScript', 'TailwindCSS', 'Redux', 'Node.js', 'JWT'],
     images: [
       '/images/Crypto1.png',
-      '/images/Crypto2.png',  
+      '/images/CryptoSecond.png',  
+      '/images/CryptoThird.png',
 
     ],
     link: 'https://github.com/SamueEel90/Crypto-Tracker',
