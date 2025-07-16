@@ -16,6 +16,7 @@ const projects = [
       '/images/Attendflow5.png',
       '/images/Attendflow3.png',
       '/images/Attendflow2.png',
+      '/images/Attendflow6.png',
      
     ],
     link: 'https://github.com/SamueEel90/Attend-Flow',
