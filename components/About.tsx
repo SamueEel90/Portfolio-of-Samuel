@@ -37,7 +37,7 @@ const About = () => {
       <br />
       Momentalne Pracujem na projekte:{' '}
       <strong className="hover:text-theme-blue text-primary cursor-pointer transition-colors duration-200">
-        Attend Flow
+        Kaufland Scanner Api
       </strong>
       <div className="flex gap-2 mt-10">
         <div className="group w-1/2 rounded-xl overflow-hidden relative">

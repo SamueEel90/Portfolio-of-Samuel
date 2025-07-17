@@ -8,7 +8,7 @@ const projects = [
   {
     title: 'Attend Flow',
     description:
-      'Mobilná aplikácia, ktorú som vyvinul na podporu svojej pracovnej pozície. Aplikácia spracováva pípnutia čipom zamestnancov na dochádzkových termináloch a v reálnom čase posiela vedúcemu smeny notifikácie o príchode, odchode a prestávkach zamestnanca. Zobrazuje rozdiely oproti plánu smeny, nárok na prestávku podľa dĺžky smeny, a úlohy naplánované pre zamestnanca nadriadeným vedúcim. Funkcia floorplanu zobrazuje celodenný plán nasadenia pre jednoduchšie rozloženie zamestnancov na smene a prácu s hodinovou produktivitou.',
+      'Mobilná aplikácia, ktorú som vyvinul na podporu svojej pracovnej pozície. Aplikácia spracováva pípnutia čipom zamestnancov na dochádzkových termináloch a v reálnom čase posiela vedúcemu smeny notifikácie o príchode, odchode a prestávkach zamestnanca. Zobrazuje rozdiely oproti plánu smeny, nárok na prestávku podľa dĺžky smeny a úlohy naplánované pre zamestnanca nadriadeným vedúcim. Funkcia floorplanu zobrazuje celodenný plán nasadenia pre jednoduchšie rozloženie zamestnancov na smene a prácu s hodinovou produktivitou.',
     tech: ['React Native', 'Expo', 'TypeScript', 'TailwindCSS', 'Express', 'MongoDB'],
     images: [
       '/images/Attendflow1.png', 
@@ -17,9 +17,19 @@ const projects = [
       '/images/Attendflow3.png',
       '/images/Attendflow2.png',
       '/images/Attendflow6.png',
-     
     ],
     link: 'https://github.com/SamueEel90/Attend-Flow',
+  },
+  {
+    title: 'Kaufland Scanner Api',
+    description:
+      'Replika softvéru, ktorý používa Kaufland v skeneroch. Poskytuje informácie o artikloch, kontrolu cien, dátumov spotreby a správu zásob, naskladnenie a vrátenie tovaru, nastavenie skladových miest, maximálnych kapacít a odpisy.',
+    tech: [],
+    images: [
+      '/images/KauflandScannerApi1.png',
+      
+    ],
+    link: 'https://github.com/SamueEel90/Kaufland-Scanner-Api',
   },
   {
     title: 'Native Weather App',
