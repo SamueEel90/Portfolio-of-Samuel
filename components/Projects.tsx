@@ -5,7 +5,19 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Image from 'next/image';
 
 const projects = [
-
+  {
+    title: 'Mythic Miles',
+    description:
+      'E-commerce webový E-shop na predaj bežeckého a cyklistického vybavenia, oblečenia a doplnkov. Umožňuje používateľom prehliadať produkty, pridávať ich do košíka a dokončiť nákup. Obsahuje aj administrátorské rozhranie na správu produktov, objednávok a používateľov.',
+    tech: ['Next.js', 'React', 'TypeScript', 'MongoDB', 'TailwindCSS'],
+    images: [
+      '/images/runningshop1.png',
+      '/images/runningshop2.png',
+      '/images/runningshop3.png',
+      '/images/runningshop4.png',
+    ],
+    link: 'https://github.com/SamueEel90/Mythic-Miles',
+  },
   {
     title: 'Crypto Tracker',
     description:
