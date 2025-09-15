@@ -34,6 +34,17 @@ const experiences = [
       'Inventúry a plánovanie zmien',
     ],
   },
+  {
+    date: '2025 - present',
+    title: 'Freelance Web Developer',
+    company: 'EG Photography ',
+    bullets: [
+      'Vytvorenie webovej stránky pre fotografa Erika G.',
+      'Implementácia dynamických zobrazení a componentov',
+      'Rezervačný systém fotografických služieb',
+      'Plne responzívny dizajn podľa požiadaviek klienta',
+    ],
+  },
 ];
 
 const Experience = () => {
