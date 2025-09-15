@@ -7,6 +7,7 @@ import Projects from "@/components/Projects";
 import Link from "next/link";
 import PhoneProjects from "@/components/PhoneProjects";
 
+
 export default function Home() {
   return (
     <div className="flex flex-col md:flex-row">
@@ -40,8 +41,10 @@ export default function Home() {
           </div>
         </section>
         <section id="projects" className="min-h-5">
-          <PhoneProjects />
+         
           <Projects />
+          <PhoneProjects />
+          
         
         <Link
           className="text-primary text-xl font-bold pl-5"

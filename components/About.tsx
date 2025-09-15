@@ -35,9 +35,9 @@ const About = () => {
       <span className="font-semibold">Frameworky a knižnice:</span>{' '}
       <span className="text-primary">React, React Native, Next.js, Redux</span>
       <br />
-      Momentalne Pracujem na projekte:{' '}
+      Momentalne pracujem na personálnom portfóliu pre fotografa{' '}
       <strong className="hover:text-theme-blue text-primary cursor-pointer transition-colors duration-200">
-        Kaufland Scanner Api
+         Erika G.
       </strong>
       <div className="flex gap-2 mt-10">
         <div className="group w-1/2 rounded-xl overflow-hidden relative">
