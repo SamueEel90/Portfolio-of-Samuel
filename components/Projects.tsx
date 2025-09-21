@@ -10,11 +10,7 @@ const projects = [
     description: 'Webová stránka pre fotografa Erika G. , ktorá prezentuje jeho portfólio, umožňuje rezerváciu fotografických služieb a obsahuje dynamické zobrazenia a slidery. Stránka je plne responzívna a navrhnutá podľa požiadaviek klienta.',
     tech: ['Next.js', 'React', 'TypeScript', 'MongoDB', 'TailwindCSS'],
     images: [
-      '/images/EG1.png',
-      '/images/EG2.png',
-      '/images/EG3.png',
-      '/images/EG4.png',
-      '/images/EG5.png'
+      '/images/egphotography.png'
     ],
     link: 'https://github.com/SamueEel90/EG-Photography',
   },
