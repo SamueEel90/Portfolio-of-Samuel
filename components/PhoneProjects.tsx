@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Image from 'next/image';
+
+import PhoneGalleryModal from './PhoneGalleryModal';
 
 const projects = [
   {
@@ -27,7 +28,6 @@ const projects = [
     tech: [],
     images: [
       '/images/KauflandScannerApi1.png',
-      
     ],
     link: 'https://github.com/SamueEel90/Kaufland-Scanner-Api',
   },
@@ -45,88 +45,38 @@ const projects = [
 ];
 
 const PhoneProjects = () => {
-  // Keep image index per project
-  const [imgIndexes, setImgIndexes] = useState(projects.map(() => 0));
-
-  const handlePrev = (idx: number, imagesLength: number) => {
-    setImgIndexes((prev) =>
-      prev.map((cur, i) =>
-        i === idx ? (cur - 1 + imagesLength) % imagesLength : cur
-      )
-    );
-  };
-
-  const handleNext = (idx: number, imagesLength: number) => {
-    setImgIndexes((prev) =>
-      prev.map((cur, i) =>
-        i === idx ? (cur + 1) % imagesLength : cur
-      )
-    );
-  };
+  const [selectedProjectIdx, setSelectedProjectIdx] = useState<number | null>(null);
 
   return (
     <section id="projects" className="my-10 px-4 mx-auto w-full">
       <h1 className="flex md:hidden pl-4 text-white mb-6 text-2xl font-bold">Projekty</h1>
       <div className="space-y-10 p-2 sm:p-4">
         {projects.map(({ title, description, tech, images, link }, idx) => (
-          <div
+          <button
             key={title}
-            className="flex flex-col md:flex-row gap-4 sm:gap-6 rounded-xl p-4 sm:p-6 hover:bg-theme-background/60 hover:scale-105 hover:shadow-lg transform transition-all duration-300"
+            className="flex flex-col md:flex-row gap-4 sm:gap-6 rounded-xl p-4 sm:p-6 hover:bg-theme-background/60 hover:scale-105 hover:shadow-lg transform transition-all duration-300 text-left w-full cursor-pointer group relative"
+            style={{ outline: 'none', border: 'none', background: 'none', padding: 0 }}
+            onClick={() => setSelectedProjectIdx(idx)}
+            aria-label={`Zobraziť galériu pre ${title}`}
           >
             <div className="md:w-1/2 w-full flex flex-col items-center">
               <div className="relative w-full flex flex-col items-center">
                 <div className="relative w-full flex justify-center items-center h-[470px] sm:h-[600px]">
-                  <button
-                    aria-label="Previous image"
-                    className="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 z-10 p-1 sm:p-2 hover:bg-theme-blue text-white rounded-full shadow transition disabled:opacity-50"
-                    onClick={() => handlePrev(idx, images.length)}
-                    disabled={images.length <= 1}
-                  >
-                    <FaChevronLeft size={22} className="sm:size-6" />
-                  </button>
-                  <div className="flex items-center justify-center">
-                    <Image
-                      src={images[imgIndexes[idx]]}
-                      alt={title}
-                      className="rounded-xl object-cover"
-                      width={230}
-                      height={480}
-                      style={{
-                     
-                      }}
-                      priority
-                    />
-                  </div>
-                  <button
-                    aria-label="Next image"
-                    className="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 z-10 p-1 sm:p-2 hover:bg-theme-blue text-white rounded-full shadow transition disabled:opacity-50"
-                    onClick={() => handleNext(idx, images.length)}
-                    disabled={images.length <= 1}
-                  >
-                    <FaChevronRight size={22} className="sm:size-6" />
-                  </button>
-                </div>
-                {/* Dots for images */}
-                <div className="flex gap-1 justify-center mt-2">
-                  {images.map((_, i) => (
-                    <button
-                      key={i}
-                      className={`w-2 h-2 rounded-full transition bg-theme-blue ${
-                        imgIndexes[idx] === i
-                          ? 'opacity-90 scale-125'
-                          : 'opacity-30'
-                      }`}
-                      style={{ outline: 'none', border: 'none' }}
-                      onClick={() => {
-                        setImgIndexes((prev) =>
-                          prev.map((cIdx, pIdx) =>
-                            pIdx === idx ? i : cIdx
-                          )
-                        );
-                      }}
-                      aria-label={`Go to image ${i + 1}`}
-                    />
-                  ))}
+                  <Image
+                    src={images[0]}
+                    alt={title}
+                    className="rounded-xl object-cover"
+                    width={230}
+                    height={480}
+                    style={{
+                      cursor: 'pointer',
+                    }}
+                    priority
+                  />
+                  {/* Clickable overlay indication */}
+                  <span className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60  text-theme-blue px-3 py-1 rounded-md text-sm opacity-80 group-hover:opacity-100 transition">
+                    Klikni pre náhľad obrázkov
+                  </span>
                 </div>
               </div>
             </div>
@@ -159,9 +109,17 @@ const PhoneProjects = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </button>
         ))}
       </div>
+      {/* Modal for gallery */}
+     {selectedProjectIdx !== null && (
+  <PhoneGalleryModal
+    images={projects[selectedProjectIdx].images}
+    title={projects[selectedProjectIdx].title}
+    onClose={() => setSelectedProjectIdx(null)}
+  />
+)}
     </section>
   );
 };

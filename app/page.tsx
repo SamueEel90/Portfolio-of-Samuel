@@ -11,7 +11,7 @@ import PhoneProjects from "@/components/PhoneProjects";
 export default function Home() {
   return (
     <div className="flex flex-col md:flex-row">
-      <div className="w-full md:w-2/5 flex flex-col md:h-screen pl-4">
+      <div className="w-full md:w-4/9 flex flex-col md:h-screen ml-4">
         <div className="mx-auto">
           <Hero />
           <IconBar />
@@ -22,7 +22,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full md:w-3/5 overflow-y-auto md:h-screen">
+      <div className="flex flex-col w-full md:w-5/9 overflow-y-auto md:h-screen ">
         <section id="about">
           <About />
         </section>
@@ -31,7 +31,7 @@ export default function Home() {
           <div className="text-primary text-xl font-bold max-w-xl pl-5">
             <a
               className="transform transition duration-200 hover:scale-105 hover:text-theme-blue inline-block"
-              href="/Zivotopis%20Stofik.pdf"
+              href="/zivotopis.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
