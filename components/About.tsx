@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <div className="text-secondary  text-l mt-25 ml-4 mr-4 px-4 md:mr-20 leading-relaxed">
+    <div className="text-secondary text-l mt-25 ml-4 mr-4 px-4 md:mr-20 leading-relaxed max-w-2xl">
       Som vedúci oddelenia v spoločnosti{' '}
       <strong className="hover:text-theme-blue text-primary cursor-pointer transition-colors duration-200">
         Kaufland

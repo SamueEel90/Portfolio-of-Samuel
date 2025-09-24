@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="mt-24 max-w-6xl ">
+    <section className="mt-24 ">
       <div className="flex flex-col gap-4 ">
         <h1 className="text-primary text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
           Samuel <span>Štofik</span>
@@ -12,7 +12,7 @@ const Hero = () => {
          Frontend / Full Stack Developer
         </h2>
 
-        <h3 className="text-primary text-l max-w-2xl">
+        <h3 className="text-primary text-l max-w-sm">
           Vedúci oddelenia Kaufland <br className="sm:block" />
           Študent aplikovanej informatiky a automatizácie v priemysle STU MTF
         </h3>
