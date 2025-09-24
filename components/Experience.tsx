@@ -49,7 +49,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="my-16 mt-26 max-w-xl">
+    <section id="experience" className="my-16 mt-26 px-4 ">
       <h1 className='flex md:hidden pl-4 text-white mb-4 text-2xl'>Skúsenosti</h1>
       <div className="space-y-6 pl-4">
         {experiences.map(({ date, title, company, bullets }) => (

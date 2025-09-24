@@ -65,7 +65,7 @@ const PhoneProjects = () => {
   };
 
   return (
-    <section id="projects" className="my-10 max-w-3xl mx-auto w-full">
+    <section id="projects" className="my-10 px-4 mx-auto w-full">
       <h1 className="flex md:hidden pl-4 text-white mb-6 text-2xl font-bold">Projekty</h1>
       <div className="space-y-10 p-2 sm:p-4">
         {projects.map(({ title, description, tech, images, link }, idx) => (

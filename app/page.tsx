@@ -11,7 +11,7 @@ import PhoneProjects from "@/components/PhoneProjects";
 export default function Home() {
   return (
     <div className="flex flex-col md:flex-row">
-      <div className="w-full md:w-1/2 flex flex-col md:h-screen pl-4">
+      <div className="w-full md:w-2/5 flex flex-col md:h-screen pl-4">
         <div className="mx-auto">
           <Hero />
           <IconBar />
@@ -22,8 +22,7 @@ export default function Home() {
         </div>
       </div>
 
-     
-      <div className="flex flex-col w-full md:w-1/2 overflow-y-auto md:h-screen">
+      <div className="flex flex-col w-full md:w-3/5 overflow-y-auto md:h-screen">
         <section id="about">
           <About />
         </section>

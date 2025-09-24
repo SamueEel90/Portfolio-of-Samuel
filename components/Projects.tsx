@@ -83,14 +83,14 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="my-16 mt-26 max-w-3xl mx-auto">
+    <section id="projects" className="my-16 mt-26 px-4 mx-auto">
       <h1 className="flex md:hidden pl-4 text-white mb-4 text-2xl">Projekty</h1>
 
       <div className="space-y-16 p-4">
         {projects.map(({ title, description, tech, images, link }, idx) => (
           <div
             key={title}
-            className="flex flex-col md:flex-row gap-6 rounded-xl p-6 hover:bg-theme-background/60 hover:scale-105 hover:shadow-lg transform transition duration-300"
+            className="flex flex-col md:flex-row gap-6 rounded-xl py-6 hover:bg-theme-background/60 hover:scale-105 hover:shadow-lg transform transition duration-300"
           >
             <div className="md:w-1/2 w-full relative flex items-center justify-center">
               {images.length > 1 && (
@@ -116,12 +116,13 @@ const Projects = () => {
                     width: '100%',
                     maxWidth: '700px',
                     height: 'auto',
-                    maxHeight: '400px',
+                    maxHeight: '600px',
                     objectFit: 'cover',
                   }}
                   priority
                 />
               </div>
+              
               {images.length > 1 && (
                 <button
                   aria-label="Next image"
@@ -175,7 +176,7 @@ const Projects = () => {
                     </>
                   </a>
                 </div>
-                <p className="text-secondary text-s mb-4">{description}</p>
+                <p className="text-secondary  text-s mb-4">{description}</p>
               </div>
               <div className="flex flex-wrap gap-1 text-xs text-theme-blue mt-4">
                 {tech.map((t) => (
