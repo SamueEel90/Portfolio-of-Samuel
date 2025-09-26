@@ -31,7 +31,7 @@ export default function Home() {
           <div className="text-primary text-xl font-bold max-w-xl pl-5">
             <a
               className="transform transition duration-200 hover:scale-105 hover:text-theme-blue inline-block"
-              href="/zivotopis.pdf"
+              href="/stofiksamuel.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
