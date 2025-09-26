@@ -35,7 +35,7 @@ const ProjectGalleryModal: React.FC<Props> = ({ project, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
-      <div className="relative bg-theme-background rounded-xl p-6 max-w-3xl w-full flex flex-col items-center">
+      <div className="relative bg-theme-background rounded-xl p-6 max-w-6xl w-full flex flex-col items-center">
         <button
           className="absolute top-4 right-4 text-white hover:text-theme-blue text-2xl"
           onClick={onClose}
@@ -65,9 +65,9 @@ const ProjectGalleryModal: React.FC<Props> = ({ project, onClose }) => {
             style={{
               aspectRatio: '16/9',
               width: '100%',
-              maxWidth: '700px',
+              maxWidth: '1368px',
               height: 'auto',
-              maxHeight: '600px',
+              maxHeight: '900px',
               objectFit: 'cover',
             }}
             priority
